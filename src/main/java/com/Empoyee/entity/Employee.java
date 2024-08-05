@@ -1,5 +1,6 @@
 package com.Empoyee.entity;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -14,6 +15,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Employee {
 	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
